@@ -1,1 +1,1 @@
-# metaJarvis
+# Hand Tracking and Gesture Recognition
