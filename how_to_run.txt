@@ -1,0 +1,10 @@
+To setup environment:
+sudo apt-get install libopencv-dev
+pkg-config --modversion opencv
+
+To compile the file:
+g++ -o opencv main.cpp `pkg-config --cflags --libs opencv` -lX11 -lXtst -lXext
+
+Run the program:
+./opencv
+
