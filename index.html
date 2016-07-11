@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Hand-tracking-and-gesture-recognition by adityamohan93</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/adityamohan93/Hand-Tracking-and-Gesture-Recognition">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Hand-tracking-and-gesture-recognition</h1>
+            <h2>An application based on digital image processing to track hands and locate the fingers and palm based on input taken from a live video feed from webcam. Based on the number of fingers pointed, we can instruct the system to perform functions like initiation of programs or system calls etc.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/adityamohan93/Hand-Tracking-and-Gesture-Recognition/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/adityamohan93/Hand-Tracking-and-Gesture-Recognition/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="hand-tracking-and-gesture-recognition" class="anchor" href="#hand-tracking-and-gesture-recognition" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hand Tracking and Gesture Recognition</h1>
+
+<p>An application based on digital image processing to track hands and locate the fingers and palm based on input taken from a live video feed from webcam. Based on the number of fingers pointed, we can instruct the system to perform functions like initiation of programs or system calls, etc.<br>
+Language used: C++<br>
+Library: OpenCV</p>
+
+<h2>
+<a id="instructions-to-run-program" class="anchor" href="#instructions-to-run-program" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instructions to run program</h2>
+
+<p>To setup environment on an Ubuntu machine:<br>
+sudo apt-get install libopencv-dev<br>
+pkg-config --modversion opencv</p>
+
+<p>To compile the file:<br>
+g++ -o opencv main.cpp <code>pkg-config --cflags --libs opencv</code> -lX11 -lXtst -lXext</p>
+
+<p>Run the program:<br>
+./opencv</p>
+
+<p>If number of fingers detected is 0 , it means the user is showing a first Operations.<br>
+Based on the number of fingers detected, various commands are being execute using Linux system call commands.<br>
+On detecting 1 finger, VLC media player is being opened.<br>
+On detecting 2 or 3 fingers, Mozilla Firefox is being opened.<br>
+On detecting 4 fingers, Gnome Terminal is being opened.<br>
+The ctions can be modified in code.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/adityamohan93">adityamohan93</a> can be found on <a href="https://github.com/adityamohan93/Hand-Tracking-and-Gesture-Recognition">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
